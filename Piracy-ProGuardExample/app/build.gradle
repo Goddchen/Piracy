@@ -1,9 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        release {
+            keyAlias 'Android Release Key'
+            keyPassword 'evenmoresecret'
+            storeFile file('../../keystore.jks')
+            storePassword 'topsecret'
+        }
+    }
     compileSdkVersion 21
     buildToolsVersion "21.1.1"
-
     defaultConfig {
         applicationId "proguard.piracy.android.goddchen.de.piracy_proguardexample"
         minSdkVersion 15
@@ -13,7 +20,8 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
