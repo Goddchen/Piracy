@@ -24,3 +24,6 @@ proguard/
 
 # Log Files
 *.log
+/Piracy-ProGuardExample/.idea
+/Piracy-ProGuardExample/*.iml
+*.iml
