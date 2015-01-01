@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Piracy - ProGuard Example</string>
+    <string name="check_for_pro">Check for Pro version</string>
+    <string name="status">Status: %1$s</string>
+    <string name="status_unknown">Unknown</string>
+    <string name="status_pro">Pro :D</string>
+    <string name="status_no_pro">NOT Pro :(</string>
+</resources>
