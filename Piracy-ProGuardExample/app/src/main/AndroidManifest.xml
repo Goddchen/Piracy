@@ -1,6 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="proguard.piracy.android.goddchen.de.piracy_proguardexample">
 
+    <uses-permission android:name="android.android.vending.CHECK_LICENSE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
